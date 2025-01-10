@@ -57,6 +57,9 @@ async function run() {
 
 
 
+  
+
+
     app.get("/plants",async(req,res)=>{
       const result=await plantsCollection.find().toArray();
       res.send(result)
